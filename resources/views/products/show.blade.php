@@ -11,11 +11,11 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                 <form action="{{ route('products.update', $product) }} " method="post">
                     @csrf
-                    <div class="mt-4"{{-- class="flex items-center justify-end gap-4"--}}>
-                        <x-input-label for="id" :value="__('ID')" />
-                        <x-text-input id="id" class="block mt-1 w-full" type="text" name="id" :value="$product->id" required autofocus autocomplete="off" />
-                        <x-input-error :messages="$errors->get('id')" class="mt-2" />
-                    </div>
+{{--                    <div class="mt-4"--}}{{-- class="flex items-center justify-end gap-4"--}}{{-->--}}
+{{--                        <x-input-label for="id" :value="__('ID')" />--}}
+{{--                        <x-text-input id="id" class="block mt-1 w-full" type="text" name="id" :value="$product->id" required autofocus autocomplete="off" />--}}
+{{--                        <x-input-error :messages="$errors->get('id')" class="mt-2" />--}}
+{{--                    </div>--}}
                     <!-- Name -->
                     <div class="mt-4">
                         <x-input-label for="name" :value="__('Name')" />
@@ -45,8 +45,8 @@
                         <x-primary-button class="ms-4">
                             {{ __('Cохранить') }}
                         </x-primary-button>
-
                     </div>
+                </form>
                 </div>
             </div>
         </div>

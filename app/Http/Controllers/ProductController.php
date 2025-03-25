@@ -31,13 +31,13 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $validate = $request->validate([
+        $validated = $request->validate([
             'name' => 'required|string|max:255',
             'categories_id' => 'required|integer',
             'price' => 'required|numeric',
             'description' => 'nullable|string|max:255',
         ]);
-        $product = new Product($validate);
+        $product = new Product($validated);
         $product->save();
 
         return redirect()->route('products.index');

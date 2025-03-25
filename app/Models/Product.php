@@ -16,7 +16,7 @@ class Product extends Model
     protected $guarded = [];
     public function orders() : HasMany
     {
-        return $this->hasMany(Order::class);
+        return $this->hasMany(Order::class, 'product_id', 'id');
     }
     public function category() : BelongsTo
     {

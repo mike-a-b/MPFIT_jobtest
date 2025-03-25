@@ -17,10 +17,9 @@ return new class extends Migration
             $table->integer('product_id');
             $table->string('comment');
             $table->integer('quantity')->default(0);
-            $table->boolean('status')->default(1);
+            $table->boolean('status')->default(0);
             $table->timestamps();
         });
-
     }
 
     /**

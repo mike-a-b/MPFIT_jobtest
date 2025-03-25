@@ -14,7 +14,7 @@
                             <td class="font-semibold">1. Manage products</td>
                         </tr>
                         <tr>
-                            <td><a href="{{ route('products.index') }}">Show and manage the list of products</a></td>
+                            <td><a href="{{ route('products.index') }}">Show list of products. Manage products</a></td>
                         </tr>
                         <tr>
                             <td><a  href="{{ route('products.create') }}">Add new product</a></td>
@@ -23,12 +23,11 @@
                             <td class="font-semibold">2. Manage orders</td>
                         </tr>
                         <tr>
-                            <td><a href="{{ route('orders.index') }}">Show and edit the list of orders</a></td>
+                            <td><a href="{{ route('orders.index') }}">Show list of orders. Manage orders</a></td>
                         </tr>
                         <tr>
                             <td><a href="{{ route('orders.create') }}">Add new order</a></td>
                         </tr>
-
                     </table>
                 </div>
             </div>

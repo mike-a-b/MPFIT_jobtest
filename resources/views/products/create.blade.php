@@ -37,7 +37,7 @@
                         </div>
                         <div class="flex items-center justify-end mt-4">
                             <x-primary-button class="ms-4">
-                                {{ __('Create new product') }}
+                                {{ __('Save new product') }}
                             </x-primary-button>
                         </div>
                 </div>
